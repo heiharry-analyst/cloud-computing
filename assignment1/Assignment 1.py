@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[ ]:
+
+
 from __future__ import unicode_literals
 
 import redis
@@ -16,23 +22,23 @@ while True:
         break
     if msg == '':
         continue
-    print("You have entered " + msg, end=' ') 
-
-   
-    # Add your code here
-    
-pip install redis
-
-python assignment1.py
-
-redis1 = redis.Redis(host = 'redis-11363.c1.asia-northeast1-1.gce.cloud.redislabs.com', password = '1nOA0St0I7p9pQqu8HkQ18XqDfnoPeoL' , port = 11363)
-
-del haha;
-INCR 
+    print("You have entered " + msg , end=' ') 
 
 
-    
-    
-    
-    
-    print('for X times')
+    print(redis1.incr(msg) , "times")
+
+
+ 
+
+
+# In[ ]:
+
+
+redis1.info
+
+
+# In[ ]:
+
+
+
+
